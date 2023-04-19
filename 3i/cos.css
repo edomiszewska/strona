@@ -1,0 +1,69 @@
+h1{
+   
+   text-align: center;
+   color: rgb(39, 41, 143);
+}
+ul{
+    display: flex;
+    
+    list-style:georgian;
+    flex-wrap: wrap;
+   margin: 0;
+   justify-content: center;
+
+}
+li{
+    margin: 1rem;
+    flex-basis:8rem;
+}
+    a{
+        display: block;
+        padding: 1rem;
+        background-color:rgb(159, 174, 190);
+        text-align: center;
+        border-radius: .7rem;
+        
+        
+    }
+    a:hover{
+        color: blueviolet;
+        background-color: rgb(196, 222, 255);
+    }
+
+    form{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: center;
+        margin: 1rem;
+
+    }
+    label{
+        flex-basis: 35%;
+      padding: 1rem;
+    }
+
+    fieldset{
+        width: 80%;
+        text-align: left;
+        
+    }
+    .przy{
+       
+       width: 20%;
+       text-align: center;
+
+    }
+    footer{
+        width: 100%;
+        text-align: center;
+    }
+    body>*{
+        border: 1px solid rgba(85, 29, 138, 0.801) ;
+        margin: 1px;
+    }
+    .klasa1
+    {
+        display: none;
+    }
