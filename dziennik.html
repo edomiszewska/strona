@@ -1,50 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="cos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="cos.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Dziennik praktyk zawodowych</h1>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="dziennik.html">Dziennik zajęć</a></li>
-           <li><a href="podsum.html">Podsumowanie</a></li> 
-        </ul>
+      <ul>
+        <li><a href="index.html">Metryczka</a></li>
+        <li><a href="dziennik.html">Dziennik zajęć</a></li>
+        <li><a href="podsum.html">Podsumowanie</a></li>
+      </ul>
     </nav>
     <h2>Realizacja tematu</h2>
     <form>
-        <fieldset>
-            <legend>Informacja o zajęciach</legend>
-            <label for="date">Wybierz datę zajęć: <input type="date" id="date" name="data"></label>
-            <label for="dzial">Wybierz dział: <select name="dzial" id="dzial"></select></label>
+      <fieldset>
+        <legend>Informacja o zajęciach</legend>
+        <label for="date"
+          >Wybierz datę zajęć: <input type="date" id="date" name="data"
+        /></label>
 
-        <label for="temat">Wybierz temat: <select name="temat" id="temat"></select></label>
-        </fieldset>
+        <label for="temat"
+          >Wybierz temat:
+          <select name="temat" id="temat"></select
+        ></label>
+      </fieldset>
 
-        <fieldset>
-            <legend>Opiekun: </legend>
-            <label for="opiekun">
-                Tomasz Ochęduszko<input type="radio" id="Tomasz Ochęduszko" name="opiekun">
-                Klaudiusz Czerny<input type="radio" id="Klaudiusz Czerny" name="opiekun">
-                Leszek Galat<input type="radio" id="Leszek Galat" name="opiekun">
-            </label>
-            
-        </fieldset>
-        <fieldset>
-            <legend>Realizacja materiału: </legend>
-            <label for="sprawozd">
-                Sprawozdanie: <textarea name="sprawozd" id="sprawozd" cols="40" rows="10"></textarea></label>
-                Zrealizowano:<label for="rel"><input type="checkbox" name="rel" id="rel"></label>
-                Ile godzin: <label for="hour"><input type="text" id="hour" name="hour"></label>
-                Stopień opanowania materiału: <label for="zakres">1<input type="range" step=1 min=1 max=6 name="zakres" id="zakres">6</label>
-                <input type="reset" value="wyczyść" style="height: 30px;">
-                <input type="submit" value="dodaj"style="height: 30px;">
-            </fieldset>
-        
+      <fieldset>
+        <legend>Opiekun:</legend>
+        <label for="opiekun">
+          Tomasz Ochęduszko<input
+            type="radio"
+            id="Tomasz Ochęduszko"
+            name="opiekun"
+          />
+          Klaudiusz Czerny<input
+            type="radio"
+            id="Klaudiusz Czerny"
+            name="opiekun"
+          />
+          Leszek Galat<input type="radio" id="Leszek Galat" name="opiekun" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Realizacja materiału:</legend>
+        <label for="sprawozd">
+          Sprawozdanie:
+          <textarea
+            name="sprawozd"
+            id="sprawozd"
+            cols="40"
+            rows="10"
+          ></textarea>
+        </label>
+        Zrealizowano:<label for="rel"
+          ><input type="checkbox" name="rel" id="rel"
+        /></label>
+        Ile godzin:
+        <label for="hour"><input type="text" id="hour" name="hour" /></label>
+        Stopień opanowania materiału:
+        <label for="zakres"
+          >1<input
+            type="range"
+            step="1"
+            min="1"
+            max="6"
+            name="zakres"
+            id="zakres"
+          />6</label
+        >
+        <input type="reset" value="wyczyść" style="height: 30px" />
+        <input type="submit" value="dodaj" style="height: 30px" />
+      </fieldset>
     </form>
-    
-</body>
+    <div class="container">
+
+    </div>
+
+    <script src="teachingProgram.js"></script>
+    <script src="main2.js" defer ></script>
+  </body>
 </html>
